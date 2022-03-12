@@ -1,5 +1,8 @@
-<meta charset="UTF-8" />
-<div id="myDIV" class="header">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script defer src="Script.js"></script>
     <style>
         /* Включение отступа и границы в общую ширину и высоту элемента */
         * {
@@ -98,7 +101,7 @@
             font-size: 16px;
         }
 
-        /* Стиль кнопки "Добавить" */
+        /* Стиль кнопки "Сохранить" */
         .addBtn {
             padding: 10px;
             width: 25%;
@@ -116,14 +119,19 @@
             background-color: #bbb;
         }
     </style>
+</head>
+<body>
+<div id="myDIV" class="header">
+    <title>Список дел</title>
     <h2>Список дел</h2>
     <input type="text" id="myInput" placeholder="Введите новое дело...">
     <span onclick="newElement()" class="addBtn">Сохранить</span>
 </div>
-<script src="Script.js"></script>
 
 <ul id="myUL">
     <li>Почесать кошку</li>
-    <li class="checked">Полить картошку</li>
-    <li>Сложить в лукошко</li>
+    <li>Полить картошку</li>
+    <li class="checked">Сложить в лукошко</li>
 </ul>
+</body>
+</html>

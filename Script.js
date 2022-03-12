@@ -20,12 +20,12 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Добавить "checked" символ при нажатии на элемент списка
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
+const list = document.querySelectorAll('li');
+for (let item of list) {
+    item.addEventListener('click', function (ev) {
         ev.target.classList.toggle('checked');
-    }
-}, false);
+    }, false);
+}
 
 // Создайте новый элемент списка при нажатии на кнопку "Добавить"
 function newElement() {
