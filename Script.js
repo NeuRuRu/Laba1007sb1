@@ -40,7 +40,7 @@ function newElement() {
     document.getElementById("myInput").value = "";
 
     const span = document.createElement("SPAN");
-    const txt = document.createTextNode("");
+    const txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
